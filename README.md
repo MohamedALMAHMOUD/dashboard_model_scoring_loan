@@ -1,10 +1,10 @@
 # Modèle de Scoring pour la Prédiction de Prêts
 Ce projet consiste en la création et le déploiement d'un modèle de scoring pour prédire si un client est éligible pour un prêt financier. Le projet comprend plusieurs étapes, allant de l'exploration des données à la création d'un tableau de bord interactif en utilisant Streamlit.
 
-## Objectif
+## I. Objectif
 L'objectif principal de ce projet est de fournir une solution qui permette aux institutions financières de prendre des décisions éclairées concernant l'octroi de prêts. Le modèle de scoring développé utilise des caractéristiques spécifiques des clients pour évaluer leur probabilité de remboursement. Cette approche vise à minimiser les risques associés aux prêts non remboursés tout en offrant des opportunités aux clients qui répondent aux critères définis.
 
-## Contenu du Projet
+## II. Contenu du Projet
 Le projet est divisé en plusieurs étapes clés :
 
 ### 1. Collecte et Nettoyage des Données : 
@@ -31,11 +31,11 @@ Le tableau de bord interactif est conçu pour fournir aux utilisateurs une inter
 Consulter la liste des clients actuels dans la base de données.
 Effectuer des recherches spécifiques en fonction de différents critères.
 Obtenir des prédictions pour de nouveaux clients en entrant leurs informations pertinentes. Vous pouvez faire tout cela [ICI] (https://dashboard-model-scoring-loan-almahmoud.streamlit.app/)
-## Prérequis
+## III. Prérequis
 - Python 3.x
 - Bibliothèques Python : pandas, scikit-learn, streamlit, joblib, etc.
 - Comment Exécuter le Projet
-## Conclusion
+## IV. Conclusion
 Ce projet démontre comment créer et déployer un modèle de scoring pour prédire l'éligibilité des clients à un prêt financier. La combinaison de l'analyse de données, de l'apprentissage automatique et de la création d'un tableau de bord interactif offre une solution complète pour aider les institutions financières à prendre des décisions éclairées et à gérer les risques associés aux prêts.
 
 N'hésitez pas à explorer le code source et à utiliser le tableau de bord pour découvrir davantage le fonctionnement du modèle de scoring.
