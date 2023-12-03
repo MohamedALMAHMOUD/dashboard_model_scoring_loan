@@ -137,7 +137,7 @@ if selected == "Prédiction des nouvaux clients":
         }
 
         if st.button("Predict"):
-            response = requests.post("https://vast-journey-10264.herokuapp.com/predict", json=data)
+            response = requests.post("https://python.cabane-data.fr/predict", json=data)
             prediction = float(response.text)
             st.success(prediction)
             if prediction <0.15:
