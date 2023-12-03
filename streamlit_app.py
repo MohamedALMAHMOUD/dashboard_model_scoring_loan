@@ -68,9 +68,7 @@ if selected == "Prédiction des clients":
             'AMT_CREDIT': df_dico['AMT_CREDIT'],
             'AMT_ANNUITY': df_dico['AMT_ANNUITY'],
             'INSTAL_DPD_MEAN': df_dico['INSTAL_DPD_MEAN'],
-            'INSTAL_AMT_PAYMENT_SUM': df_dico['INSTAL_AMT_PAYMENT_SUM'],
-            
-            
+            'INSTAL_AMT_PAYMENT_SUM': df_dico['INSTAL_AMT_PAYMENT_SUM']
         }
         if st.button("Predict"):
             response = requests.post("https://python.cabane-data.fr/predict", json=data)
