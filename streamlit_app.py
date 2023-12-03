@@ -73,7 +73,7 @@ if selected == "Prédiction des clients":
             
         }
         if st.button("Predict"):
-            response = requests.post("https://python.cabane-data.fr//predict", json=data)
+            response = requests.post("https://python.cabane-data.fr/predict", json=data)
             prediction = float(response.text)
             st.success(prediction)
             if prediction <0.15:
