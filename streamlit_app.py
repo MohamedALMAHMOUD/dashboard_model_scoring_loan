@@ -72,12 +72,27 @@ if selected == "Prédiction des clients":
         }
         if st.button("Predict"):
             response = requests.post("https://python.cabane-data.fr/predict", json=data)
-            prediction = float(response.text)
-            st.success(prediction)
-            if prediction <0.15:
-                st.write("On accorde le prêt")
+            if response.status_code == 200:
+                # Chargez la réponse JSON
+                response_json = response.json()
+
+                # Extrait la valeur du champ "proba"
+                proba_value = response_json.get("proba")
+
+                # Vérifiez si la valeur peut être convertie en float
+                try:
+                    proba_float = float(proba_value)
+                    st.success(proba_float)
+
+                    if proba_float < 0.15:
+                        st.write("On accorde le prêt")
+                    else:
+                        st.write("On n'accorde pas le prêt")
+
+                except ValueError:
+                    st.error("Erreur de conversion en float")
             else:
-                st.write("On n'accorde pas le prêt")
+                st.error(f"Erreur de requête : {response.status_code}")
 
         if st.button("Interpréter"):
             # Explain/Interpretability
