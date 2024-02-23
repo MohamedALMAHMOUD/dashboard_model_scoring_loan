@@ -35,11 +35,11 @@ def get_pred_per_client(df, data):
         response_json = response.json()
 
         # Extraction of "proba" field valeur 
-        proba_value = response_json.get("proba")
+        proba_value = response_json.get("proba",0)
 
         # Verification of conversion probability in float
         try:
-            proba_float = float(proba_value,0)
+            proba_float = float(proba_value)
             st.success(proba_float)
 
             if proba_float < 0.15:
