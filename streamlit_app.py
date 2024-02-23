@@ -39,7 +39,7 @@ def get_pred_per_client(df, data):
 
         # Verification of conversion probability in float
         try:
-            proba_float = float(proba_value)
+            proba_float = float(proba_value,0)
             st.success(proba_float)
 
             if proba_float < 0.15:
