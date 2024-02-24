@@ -20,7 +20,7 @@ Des caractéristiques supplémentaires sont créées à partir des données exis
 Différents modèles de machine learning sont entraînés et évalués en utilisant les données d'entraînement. Le modèle le plus performant est sélectionné pour la prédiction finale.
 
 ### 5. Sauvegarde du Modèle : 
-Le modèle sélectionné est sauvegardé à l'aide de la bibliothèque joblib pour une utilisation ultérieure.
+Le modèle sélectionné est sauvegardé à l'aide de la bibliothèque joblib pour une utilisation ultérieure. Voir le fichier python : (https://github.com/MohamedALMAHMOUD/dashboard_model_scoring_loan/blob/main/modelisation.py). Puis un processing est mis en place pour évaluer le modèle. (https://github.com/MohamedALMAHMOUD/dashboard_model_scoring_loan/blob/main/processing.py)
 
 ### 6. Tableau de Bord Interactif : 
 Un tableau de bord interactif est créé à l'aide de Streamlit. Ce tableau de bord permet aux utilisateurs de visualiser les clients actuels, d'effectuer des recherches et d'obtenir des prédictions pour de nouveaux clients.
